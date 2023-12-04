@@ -1,6 +1,6 @@
+// 1
 // let i = 10;
 // let j = 20;
-// 1
 // for (i, j; i < j; i++) {
 //     document.write(`${i}, `);
 // } if (i = j) {
@@ -74,20 +74,37 @@
 
 // 10
 // let number1 = +prompt('Введіть натуральне число');
-// let sum;
-// if (number1 > 0) {
-//     for (number2 = 1; number2 <= number1; number2++) {
-//         if (number1 % number2 == 0) {
 
-//             document.write(`${sum}, `);
+// if (number1 > 0) {
+//     for (let number2 = 1; number2 <= number1; number2++) {
+//         if (number1 % number2 == 0) {
+//                 if (number2 % 2 == 0) {
+
+//                     document.write(`${number2}, `);
+//                 }
 //         }
 //     }
 // } else {
 //     alert(`Place number above 0`);
 // }
 
-// 11
 
+// 11
+// let number1 = +prompt('Введіть натуральне число');
+// let sum = 0;
+
+// if (number1 > 0) {
+//     for (let number2 = 1; number2 <= number1; number2++) {
+//         if (number1 % number2 == 0) {
+//                 if (number2 % 2 == 0) {
+//                     sum += number2;
+//                 }
+//             }
+//         }
+//     } else {
+//         alert(`Place number above 0`);
+//     }
+//     document.write(`${sum}`);
 
 // 12
 // let n = 10;
@@ -106,10 +123,13 @@
 // 13
 // let i = 20; 
 // let j = 30;
-// let addNumber = 0.5;
-// for (i = 20; i <= j; addNumber++) {
+
+// for (i = 20; i <= j; i += 0.5) {
 //     document.write(`${i}, `)
 // }
+
+
+
 // 14
 
 // let dollar;
@@ -136,22 +156,26 @@
 // 16
 // let number1 = +prompt('Введіть ціле число');
 
-// if (number1 % 1 == 0 && number1 % number1 == 0) {
-//     document.write(`${number1} -  число просте`)
-// } else {
-//     alert(`Будь ласка, введіть число без залишку`);
+
+// for (let i = 2; i <= number1; i++) {
+//     if (number1 % i == 0) {
+//         document.write(`${number1} -  число не є простим`);
+//         break;
+//     } else {
+//         document.write(`${number1} -  число просте`);
+//         break;
+//     }
 // }
 
 // 17
 
 // let number1 = +prompt('Введіть ціле число');
 // let i;
+// let result;
 
-
-// for (i = 3; i < number1; i**i) {
-//     if (i == number1) {
-//     }
+// while (number1 % 3 == 0) {
+//     number1 /= 3;
 // }
-// document.write(`${number1}, `);
+// document.write(`${number1 == 1 ? "Число можна отримати" : "Число неможна отримати"}`);
 
 
